@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   const fetchData = () => {
-    fetch('http://localhost:3000/user')
+    fetch('http://ec2-13-236-69-66.ap-southeast-2.compute.amazonaws.com:3000/user')
       .then(res => res.json())
       .then(data => setData(data))
       .catch(err => console.log(err));
